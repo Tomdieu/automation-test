@@ -68,12 +68,3 @@ This Python script automates the process of finding news articles related to Art
 *   **Gemini API Usage:** This script uses the Google Gemini API, which has free tier limits (e.g., requests per minute). The script includes a small delay (`time.sleep(1.1)`) between API calls to help stay within typical free limits, but heavy usage might still exceed them. Check Google's current free tier limits.
 *   **AI Accuracy:** The accuracy of the AI theme classification depends on the Gemini model and the quality of the prompt. Summaries are sometimes missing, which might affect accuracy.
 *   **Database:** The `news_articles.db` file will be created in the same directory where you run the script.
-
-## Potential Improvements (Bonus)
-
-*   More robust error handling for network issues during scraping.
-*   Fetching full article content for better AI classification (more complex and potentially costly).
-*   More sophisticated date parsing to handle edge cases.
-*   User authentication if deploying the Streamlit app.
-*   Configuration file for URLs, themes, etc.
-*   Option to choose different news sources or themes.
